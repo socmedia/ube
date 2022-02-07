@@ -22,11 +22,11 @@
                 <!-- Navbar -->
                 <nav id="navbar-collapse" class="nav__wrap collapse navbar-collapse">
                     <ul class="nav__menu">
-                        <li class="nav__dropdown active">
+                        <li class="nav__dropdown {{ activeClassByRoute('main.index') }}">
                             <a href="{{ route('main.index') }}" aria-haspopup="true">Beranda</a>
                         </li>
-                        <li class="nav__dropdown">
-                            <a href="{{ route('main.index') }}" aria-haspopup="true">Tentang Kami</a>
+                        <li class="nav__dropdown {{ activeClassByRoute('main.about') }}">
+                            <a href="{{ route('main.about') }}" aria-haspopup="true">Tentang Kami</a>
                         </li>
                         <li class="nav__dropdown">
                             <a href="{{ route('main.index') }}" aria-haspopup="true">Layanan</a>
@@ -34,40 +34,36 @@
                         <li class="nav__dropdown">
                             <a href="{{ route('main.index') }}" aria-haspopup="true">Proyek</a>
                         </li>
-                        <li class="nav__dropdown">
-                            <a href="{{ route('main.index') }}" aria-haspopup="true">Blog</a>
+                        <li class="nav__dropdown {{ activeClassByRoute('main.post.*') }}">
+                            <a href="{{ route('main.post.index') }}" aria-haspopup="true">Blog</a>
                         </li>
                     </ul> <!-- end menu -->
                     <div class="nav__phone nav__phone--mobile d-lg-none">
-                        <span class="nav__phone-text">Call us:</span>
-                        <a href="tel:1-800-995-3959" class="nav__phone-number">1-800-995-3959</a>
+                        <span class="nav__phone-text">Hubungi Kami:</span>
+                        <a href="tel:{{ $phone_1 }}" class="nav__phone-number">{{ $phone_1 }}</a>
                     </div>
 
                     <div class="nav__socials nav__socials--mobile d-lg-none">
                         <div class="socials">
-                            <a href="#" class="social social-twitter" aria-label="twitter" title="twitter"
-                                target="_blank"><i class="ui-twitter"></i></a>
-                            <a href="#" class="social social-facebook" aria-label="facebook" title="facebook"
-                                target="_blank"><i class="ui-facebook"></i></a>
-                            <a href="#" class="social social-instagram" aria-label="instagram" title="instagram"
-                                target="_blank"><i class="ui-instagram"></i></a>
+                            <a href="{{ $facebook_url }}" class="social social-facebook" aria-label="facebook"
+                                title="facebook" target="_blank"><i class="ui-facebook"></i></a>
+                            <a href="{{ $instagram_url }}" class="social social-instagram" aria-label="instagram"
+                                title="instagram" target="_blank"><i class="ui-instagram"></i></a>
                         </div>
                     </div>
                 </nav> <!-- end nav-wrap -->
 
                 <div class="nav__phone nav--align-right d-none d-lg-block">
-                    <span class="nav__phone-text">Call us:</span>
-                    <a href="tel:1-800-995-3959" class="nav__phone-number">1-800-995-3959</a>
+                    <span class="nav__phone-text">Hubungi Kami:</span>
+                    <a href="tel:{{ $phone_1 }}" class="nav__phone-number">{{ $phone_1 }}</a>
                 </div>
 
                 <div class="nav__socials d-none d-lg-block">
                     <div class="socials">
-                        <a href="#" class="social social-twitter" aria-label="twitter" title="twitter"
-                            target="_blank"><i class="ui-twitter"></i></a>
-                        <a href="#" class="social social-facebook" aria-label="facebook" title="facebook"
-                            target="_blank"><i class="ui-facebook"></i></a>
-                        <a href="#" class="social social-instagram" aria-label="instagram" title="instagram"
-                            target="_blank"><i class="ui-instagram"></i></a>
+                        <a href="{{ $facebook_url }}" class="social social-facebook" aria-label="facebook"
+                            title="facebook" target="_blank"><i class="ui-facebook"></i></a>
+                        <a href="{{ $instagram_url }}" class="social social-instagram" aria-label="instagram"
+                            title="instagram" target="_blank"><i class="ui-instagram"></i></a>
                     </div>
                 </div>
 

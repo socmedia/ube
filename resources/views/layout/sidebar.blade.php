@@ -29,13 +29,6 @@
                 </a>
             </li>
 
-            <li class="nav-item {{ request()->routeIs('adm.product.*') ? 'active' : '' }}">
-                <a href="{{route('adm.product.index')}}" class="nav-link">
-                    <i class="link-icon" data-feather="home"></i>
-                    <span class="link-title">Apartemen</span>
-                </a>
-            </li>
-
             <li class="nav-item {{ request()->routeIs('adm.review.*') ? 'active' : '' }}">
                 <a href="{{route('adm.review.index')}}" class="nav-link">
                     <i class="link-icon" data-feather="git-merge"></i>

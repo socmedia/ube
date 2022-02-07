@@ -2,11 +2,11 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="section-title text-center">Layanan Kami</h2>
+                <h2 class="section-title text-center mb-32">Layanan Kami</h2>
                 <div class="row">
                     <div class="col-md-6 col-lg-3">
                         <div class="service-1">
-                            <a href="#" class="service-1__url hover-scale">
+                            <a class="service-1__url hover-scale">
                                 <img src="{{ asset('images/services/unit_supply.jpg') }}" class="service-1__img"
                                     alt="Unit Supply">
                             </a>
@@ -20,7 +20,7 @@
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="service-1">
-                            <a href="#" class="service-1__url hover-scale">
+                            <a class="service-1__url hover-scale">
                                 <img src="{{ asset('images/services/installation.jpg') }}" class="service-1__img"
                                     alt="Installation">
                             </a>
@@ -34,7 +34,7 @@
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="service-1">
-                            <a href="#" class="service-1__url hover-scale">
+                            <a class="service-1__url hover-scale">
                                 <img src="{{ asset('images/services/ducting.jpg') }}" class="service-1__img"
                                     alt="Ducting">
                             </a>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <div class="service-1">
-                            <a href="#" class="service-1__url hover-scale">
+                            <a class="service-1__url hover-scale">
                                 <img src="{{ asset('images/services/service_maintenance.jpg') }}" class="service-1__img"
                                     alt="Service & Maintenance">
                             </a>

@@ -12,7 +12,8 @@
                 <div class="card-body">
 
                     <fieldset class="form-group">
-                        <form wire:submit.prevent="updateContact({{$maps['id']}}, '{{$maps['attribute']}}')">
+                        <form
+                            wire:submit.prevent="updateContact({{$maps ? $maps['id'] : null }}, '{{ $maps ? $maps['attribute'] : null }}')">
 
                             <label for="">Maps</label>
                             <div class="input-group">
@@ -53,23 +54,16 @@
                     </fieldset>
 
                     <fieldset class="form-group">
-                        <form
-                            wire:submit.prevent="updateContact({{$oldCatalogue['id']}}, '{{$oldCatalogue['attribute']}}')">
+                        <form wire:submit.prevent="updateContact({{$showroom['id']}}, '{{$showroom['attribute']}}')">
 
-                            <label for="">Katalog</label>
+                            <label for="">Showroom</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
                                     <div class="input-group-text">
-                                        <i class='mdi mdi-file'></i>
+                                        <i class='mdi mdi-map-marker'></i>
                                     </div>
                                 </div>
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input"
-                                        accept=".xlsx,.xls,.doc,.docx,.ppt,.pptx,.txt,.pdf" id="catalogue"
-                                        wire:model="catalogue">
-                                    <label class="custom-file-label"
-                                        for="catalogue">{{$catalogue ? $catalogue->getClientOriginalName() : $oldCatalogue['name']}}</label>
-                                </div>
+                                <textarea type="text" class="form-control" wire:model.defer="showroom.value"></textarea>
                                 <div class="input-group-append">
                                     <button class="btn btn-dark">
                                         <i class='mdi mdi-check'></i>

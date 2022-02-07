@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+use Modules\Post\Entities\Post;
+
 class MainController extends Controller
 {
     /**
@@ -25,13 +28,25 @@ class MainController extends Controller
     }
 
     /**
-     * Show apartment on company profile
+     * Show post on company profile
      *
      * @return void
      */
-    public function apartment()
+    public function post(Request $request)
     {
-        return view('pages.apartment');
+        return view('pages.post');
+    }
+
+    /**
+     * Show postDetail on company profile
+     *
+     * @return void
+     */
+    public function postDetail(Post $post)
+    {
+        return view('pages.post-single', [
+            'post' => $post,
+        ]);
     }
 
     /**

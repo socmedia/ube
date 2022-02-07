@@ -8,11 +8,11 @@
     content="PT. Utama Bintang Erkonpersada memberikan pelayanan yang total dalam bidang Air Conditioning. Lingkup pekerjaan kami mencakup Ducting, Installation & Maintenance semua jenis AC Ruang dan Gedung untuk Rumah, Hotel, Pabrik, Restaurant, Meeting Room, Supermarket, Office, dan sebagainya.">
 <meta name="author" content="Utama Bintang Erkonpersada" />
 <meta name="keywords"
-    content="apartemen,apartemen menengah,hunian jogja, greenpark jogja, Utama Bintang Erkonpersada,apartment jogja,apartemen jogja,apartemen lengkap, apartemen greenpark jogja,apartemen anak muda" />
+    content="pt. utama bintang erkonpersada, utama bintang erkonpersada, daikin proshop, daikin proshop solo, utama engineering, toko ac solo, service ac solo, ducting, maintenance, unit supply" />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://utamabintangerkonpersada.com/">
+<meta property="og:url" content="{{ route('main.index') }}">
 <meta property="og:title" content="Utama Bintang Erkonpersada | Daikin Proshop">
 <meta property="og:description"
     content="PT. Utama Bintang Erkonpersada memberikan pelayanan yang total dalam bidang Air Conditioning. Lingkup pekerjaan kami mencakup Ducting, Installation & Maintenance semua jenis AC Ruang dan Gedung untuk Rumah, Hotel, Pabrik, Restaurant, Meeting Room, Supermarket, Office, dan sebagainya.">
@@ -20,7 +20,7 @@
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://utamabintangerkonpersada.com/">
+<meta property="twitter:url" content="{{ route('main.index') }}">
 <meta property="twitter:title" content="Utama Bintang Erkonpersada | Daikin Proshop">
 <meta property="twitter:description"
     content="PT. Utama Bintang Erkonpersada memberikan pelayanan yang total dalam bidang Air Conditioning. Lingkup pekerjaan kami mencakup Ducting, Installation & Maintenance semua jenis AC Ruang dan Gedung untuk Rumah, Hotel, Pabrik, Restaurant, Meeting Room, Supermarket, Office, dan sebagainya.">
@@ -85,7 +85,6 @@
 {{-- Projects --}}
 <livewire:project.overview />
 
-
 {{-- Testimoni --}}
 <livewire:review.overview />
 
@@ -106,6 +105,8 @@
 <script src="{{ asset('js/vendors/revolution/js/extensions/revolution.extension.migration.min.js') }}"></script>
 <script src="{{ asset('js/vendors/revolution/js/extensions/revolution.extension.parallax.min.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/lightgallery.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/zoom/lg-zoom.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/video/lg-video.umd.js"></script>
 <script>
     $(function() {
@@ -128,6 +129,12 @@
 
         lightGallery(document.querySelector('[data-type="video-preview"]'), {
             plugins: [lgVideo],
+            speed: 500,
+        });
+
+        lightGallery(document.querySelector('.projects'), {
+            plugins: [lgZoom, lgThumbnail],
+            thumbnail: true,
             speed: 500,
         });
     });

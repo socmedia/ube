@@ -10,46 +10,64 @@
                             <img src="{{ asset('images/logo_without_bg.png') }}" width="120" alt="logo">
                         </a>
                     </div>
-                </div> <!-- end logo -->
-
-                <div class="col-12">
-                    <div class="widget widget_nav_menu">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.7969382929223!2d110.82126731467734!3d-7.597065977184252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a1610eed0f649%3A0x67ac78ef88f51e9d!2sDaikin%20Proshop%20PT.%20Utama%20Bintang%20Erkonpersada%20(Perbaikan%2C%20Perawatan%2C%20Pemasangan%20Unit%20Air%20Conditioning)!5e0!3m2!1sid!2sid!4v1640849072165!5m2!1sid!2sid"
-                            width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
                 </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-uppercase text-light">Datang Ke PRO-SHOP Kami</h2>
+                    <p><strong class="text-light">Kantor: </strong> <br> {{ $address }}</p>
+                    <p><strong class="text-light">Showroom: </strong> <br> {{ $showroom }}</p>
+                    <p><strong class="text-light">Jam Operasional</strong></p>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="pl-0 pb-2 pr-2">Senin-Jumat</td>
+                                <td class="p-2">:</td>
+                                <td class="p-2">08.00 - 16.00</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-0 py-2 pr-2">Sabtu</td>
+                                <td class="p-2">:</td>
+                                <td class="p-2">08.00 - 13.00</td>
+                            </tr>
+                            <tr>
+                                <td class="pl-0 py-2 pr-2">Minggu</td>
+                                <td class="p-2">:</td>
+                                <td class="p-2">Tutup</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
         </div>
     </div> <!-- end container -->
 
     <div class="footer__bottom">
-        <div class="container-fluid text-right text-md-center">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 mb-3">
-                    <ul class="d-flex flex-wrap">
-                        <li style="margin-right: .5rem; margin-bottom: .5rem">
-                            <a href="javascript:void(0)">Tentang Kami</a>
-                        </li>
-                        <li style="margin-right: .5rem; margin-bottom: .5rem">
-                            <a href="javascript:void(0)">Layanan</a>
-                        </li>
-                        <li style="margin-right: .5rem; margin-bottom: .5rem">
-                            <a href="javascript:void(0)">Proyek</a>
-                        </li>
-                        <li><a href="javascript:void(0)">Blog</a></li>
-                    </ul>
+                    <div class="widget">
+                        <div class="socials text-center text-md-left">
+                            <a style="margin-right: .5rem; margin-bottom: .5rem" class="nav__phone-number"
+                                href="{{ route('main.about') }}">Tentang Kami</a>
+                            <a style="margin-right: .5rem; margin-bottom: .5rem" class="nav__phone-number"
+                                href="javascript:void(0)">Layanan</a>
+                            <a style="margin-right: .5rem; margin-bottom: .5rem" class="nav__phone-number"
+                                href="javascript:void(0)">Proyek</a>
+                            <a class="nav__phone-number" href="{{ route('main.post.index') }}">Blog</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 text-center text-md-right">
                     <span class="copyright">
-                        <p>Copyright &copy; 2022 PT. Utama Bintang Erkonpersada.</p>
+                        <p>Copyright &copy; 2022 PT. Utama Bintang Erkonpersada - DAIKIN PRO-SHOP.</p>
                         <div class="widget">
                             <div class="socials">
-                                <a href="javascript:void(0)" class="social social-twitter" aria-label="twitter"
-                                    title="twitter" target="_blank"><i class="ui-twitter"></i></a>
-                                <a href="javascript:void(0)" class="social social-facebook" aria-label="facebook"
+                                <a href="{{ $facebook_url }}" class="social social-facebook" aria-label="facebook"
                                     title="facebook" target="_blank"><i class="ui-facebook"></i></a>
-                                <a href="javascript:void(0)" class="social social-instagram" aria-label="instagram"
+                                <a href="{{ $instagram_url }}" class="social social-instagram" aria-label="instagram"
                                     title="instagram" target="_blank"><i class="ui-instagram"></i></a>
                             </div>
                         </div>

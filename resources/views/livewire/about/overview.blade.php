@@ -1,7 +1,7 @@
 <section class="section-wrap intro pb-40">
     <div class="container">
         <div class="row">
-            <div class="col-lg-7 mb-40">
+            <div class="col-md-5 col-lg-6 mb-40 mr-auto">
                 <p class="subtitle text-muted fw-semi-bold">PROFIL PERUSAHAAN</p>
                 <h2 class="intro__title">PT. UTAMA BINTANG ERKONPERSADA</h2>
                 <p>
@@ -24,8 +24,9 @@
 
                 <a href="{{ route('main.about') }}" class="btn btn--lg btn--dark"><span>Selengkapnya</span></a>
             </div>
-            <div class="col-lg-5">
-                <img src="" class="img-full-width" alt="">
+            <div class="col-md-6 col-lg-5">
+                <img src="{{ asset('images/showroom_3_pt.jpg') }}" class="img-full-width"
+                    alt="Daikin Proshop Solo - Showroom PT Utama Bintang Erkonpersada" />
             </div>
 
         </div>

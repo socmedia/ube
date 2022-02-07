@@ -23,7 +23,8 @@ Route::group([
 
     Route::get('/tentang-kami', [MainController::class, 'about'])->name('about');
 
-    Route::get('/apartemen', [MainController::class, 'apartment'])->name('apartment');
+    Route::get('/blog', [MainController::class, 'post'])->name('post.index');
+    Route::get('/blog/{post:slug_title}', [MainController::class, 'postDetail'])->name('post.detail');
 
     Route::get('/ulasan', [MainController::class, 'review'])->name('review');
 
@@ -37,4 +38,3 @@ Auth::routes(['verify' => false]);
 Route::get('/images/banner/{imageName}', [MediaController::class, 'getBannerImage'])->name('getBannerImage');
 Route::get('/videos/banner/{videoName}', [MediaController::class, 'getBannerVideo'])->name('getBannerVideo');
 Route::get('/images/products/{imageName}', [MediaController::class, 'getProductImage'])->name('getProductImage');
-Route::get('/files/catalogue/{catalogueName}', [MediaController::class, 'getCatalogue'])->name('getCatalogue');

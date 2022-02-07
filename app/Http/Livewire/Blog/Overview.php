@@ -3,10 +3,13 @@
 namespace App\Http\Livewire\Blog;
 
 use Livewire\Component;
+use Livewire\WithPagination;
 use Modules\Post\Entities\Post;
 
 class Overview extends Component
 {
+    use WithPagination;
+
     public $isHomePage = false;
 
     public function mount()
@@ -21,7 +24,7 @@ class Overview extends Component
                 ->where('status_id', 2);
         })->with('thumbnail')->orderBy('created_at', 'desc');
 
-        return $post->paginate($this->isHomePage ? 6 : 12);
+        return $post->paginate($this->isHomePage ? 6 : 9);
     }
 
     public function render()
