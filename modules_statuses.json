@@ -1,0 +1,9 @@
+{
+    "Contact": true,
+    "Lead": true,
+    "Banner": true,
+    "Product": true,
+    "Review": true,
+    "Dashboard": true,
+    "Post": true
+}

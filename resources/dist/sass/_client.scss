@@ -1,0 +1,19 @@
+.clients {
+    padding: 50px 0;
+}
+
+.clients li {
+    width: 20%;
+    float: left;
+    padding: 0 30px;
+}
+
+.clients img {
+    opacity: 0.3;
+    transition: .4s;
+}
+
+.clients img:hover {
+    opacity: 1;
+    transition: .4s;
+}

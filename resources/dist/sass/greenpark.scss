@@ -1,0 +1,26 @@
+@import '../css/bootstrap.min.css';
+@import '../css/ilmosys-icon.css';
+
+@import '~bootstrap/scss/bootstrap-grid';
+
+// Variables
+$primary: #3F6745;
+
+@import 'fonts';
+@import 'globals';
+@import 'common';
+@import 'header';
+@import 'service';
+@import 'info';
+@import 'intro';
+@import 'testimonial';
+@import 'about';
+@import 'feature';
+@import 'pricing';
+@import 'client';
+@import 'contact';
+@import 'mailchimp';
+@import 'element';
+@import 'footer';
+@import 'responsive';
+@import 'custom';

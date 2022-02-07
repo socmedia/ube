@@ -1,0 +1,38 @@
+.info-content h3 {
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    font-size: 24px;
+    margin: 0px 0 20px;
+}
+
+.keysize i {
+    color: #222;
+    font-size: 28px;
+    padding-right: 11px;
+}
+
+.info-content h4 {
+    font-weight: 400;
+    font-size: 30px;
+    margin: 0px 0 20px;
+    line-height: 40px;
+}
+
+.info-content p {
+    margin: 0 0 10px;
+}
+
+.list li {
+    padding: 6px 0 9px 35px;
+    position: relative;
+    color: #555;
+}
+
+.list li i {
+    min-width: 30px;
+    color: $primary;
+    position: absolute;
+    left: 0;
+    top: 4px;
+    font-size: 25px;
+}

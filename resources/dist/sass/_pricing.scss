@@ -1,0 +1,82 @@
+.pricing2 .gold>.price {
+    background: $white;
+    color: #222;
+}
+
+.pricing2 .gold>h1,
+.pricing2 .gold>h2,
+.pricing2 .gold>p,
+.pricing2 .gold>span {
+    color: $white;
+}
+
+.pricing2 .price {
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    background-color: $primary;
+    border-radius: 50%;
+    line-height: 120px;
+    color: $white;
+    font-size: 40px;
+    font-family: Open Sans;
+    font-weight: 400;
+    margin: 20px auto;
+}
+
+.pricing2 h1 {
+    margin: 20px 0 10px 0;
+    font-size: 28px;
+    color: #000;
+    font-weight: 700;
+}
+
+.pricing2 h2 {
+    font-size: 11px;
+    color: #555;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+}
+
+.pricing2 p {
+    color: #444;
+    margin: 10px 0;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.pricing2 span {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 125px;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pricing2 .btn {
+    background: $primary;
+    border-color: $primary;
+    margin: 15px auto 0;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    color: $white;
+    padding: 12px 35px;
+}
+
+.pricing2 .btn:hover {
+    background: #0a2233;
+    border-color: #0a2233;
+    color: $white;
+}
+
+.pricing2 .gold .btn:hover {
+    background: $white;
+    border-color: $white;
+    color: #0a2233;
+}

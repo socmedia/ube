@@ -1,0 +1,38 @@
+.testimonials {
+    background: #070707 no-repeat center;
+    background-size: cover;
+    margin-top: -70px;
+    padding: 160px 0;
+}
+
+.testimonials p {
+    font-size: 23px;
+    line-height: 32px;
+    font-weight: 300;
+    color: $white;
+    padding: 0 07% 20px;
+    letter-spacing: -0.3px;
+}
+
+.testimonials .author {
+    font-weight: bold;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    color: $white;
+}
+
+.testimonials i {
+    color: $white;
+    font-size: 75px;
+    margin: 0px auto 30px;
+    display: table;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+    background: $white;
+    padding: 50px;
+    width: 150px;
+    border-bottom-left-radius: 40px;
+}
